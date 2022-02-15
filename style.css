@@ -1,0 +1,632 @@
+/*------------ Google font -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+:root
+{
+	/*--------- Color variable ---------*/
+	--blue-color: #33467b;
+	---light--blue-color: #69788F;
+
+	/*---------- Font size ------------*/
+	---heading--font-size: 1.5rem;
+	---paragraph--font-size: 1rem;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+img
+{
+	width: 100%;
+	height: 0 auto;
+}
+
+.heading
+{
+	color: var(--blue-color);
+	font-size: var(---heading--font-size);
+	font-weight: 600;
+}
+
+.para-line
+{
+	color: var(---light--blue-color);
+	font-size: var(---paragraph--font-size);
+}
+
+.white
+{
+	color: #ffffff;
+}
+
+.btn
+{
+	background-color: #ffffff;
+	padding: 0.8rem 2.5rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	color: var(--blue-color);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.border-btn
+{
+	border: 2px solid var(--blue-color);
+	margin: 1.5rem 0;
+	transition: .5s;
+}
+
+.border-btn:hover
+{
+	background: var(--blue-color);
+}
+
+.border-btn:hover a
+{
+	color: #ffffff;
+}
+
+/*--------------- Hero section start -----------------*/
+.hero
+{
+	height: 100vh;
+	width: 100%;
+	background-image: url(img/course-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero .container
+{
+	height: 100vh;
+	width: 100%;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+
+.hero .container .para-line
+{
+	margin: 1rem 0 1rem 0;
+}
+/*--------------- Hero section end -----------------*/
+
+
+/*--------------- About section start --------------*/
+.about .container
+{
+	margin: 3.5rem 0;
+	padding: 0 1.2rem;
+	text-align: center;
+}
+
+.about-img
+{
+	border-radius: 6px;
+}
+/*--------------- About section end --------------*/
+
+
+/*--------------- Course category section start --------------*/
+.category
+{
+	background-color: #faf8ff;
+	margin: 3.5rem 0;
+}
+
+.category .container
+{
+	padding: 3rem 2rem;
+	text-align: center;
+}
+
+.category-row
+{
+	margin: 2rem 0;
+}
+
+.category-card
+{
+	background-color: #ffffff;
+	margin: 2rem 0;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.category-icon
+{
+	color: var(--blue-color);
+	font-size: 2.6rem;
+}
+
+.category-name
+{
+	color: var(--blue-color);
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+/*--------------- Course category section end --------------*/
+
+
+/*--------------- Facility section start --------------*/
+.facilities
+{
+	margin: 4rem 0;
+}
+
+.facilities .container
+{
+	padding: 0 1.8rem;
+	text-align: center;
+}
+
+.facility-row
+{
+	margin: 3rem 0;
+}
+
+.facility-box
+{
+	margin: 2rem 0;
+}
+
+.facility-icon
+{
+	font-size: 2.2rem;
+	color: var(--blue-color);
+}
+
+.facility-heading
+{
+	color: var(--blue-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+/*--------------- Facility section end --------------*/
+
+
+/*--------------- Success section start --------------*/
+.success
+{
+	margin: 4rem 0;
+	background-color: #faf8ff;
+}
+
+.success .container
+{
+	padding: 4rem 1.6rem;
+	text-align: center;
+}
+
+.success-card
+{
+	margin: 2rem 0;
+	background-color: #ffffff;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.success-icon
+{
+	color: var(--blue-color);
+	font-size: 2.6rem;
+}
+
+.success-name
+{
+	color: var(--blue-color);
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+/*--------------- Success section end --------------*/
+
+
+/*--------------- Master section start -------------*/
+.master
+{
+	margin: 4rem 0;
+}
+
+.master .container
+{
+	padding: 0 1.8rem;
+	text-align: center;
+}
+
+.masters-row
+{
+	margin: 2rem 0;
+}
+
+.master-card
+{
+	margin: 1.5rem 0;
+	padding: 2rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.master-name
+{
+	font-weight: 700;
+}
+
+.master-name, .master-post
+{
+	color: var(--blue-color);
+}
+/*--------------- Master section end -------------*/
+
+
+/*--------------- Partner section start ----------*/
+.partner
+{
+	margin: 4rem 0;
+	background-color: #faf8ff;
+}
+
+.partner .container
+{
+	padding: 3.6rem 1.8rem;
+	text-align: center;
+}
+
+.partner-row
+{
+	margin: 2rem 0;
+}
+
+.partner-card
+{
+	margin: 1.5rem 0;
+	padding: 0.5rem 2rem;
+	background-color: #ffffff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border: none;
+	border-radius: 8px;
+}
+/*--------------- Partner section end ----------*/
+
+
+
+/*-------------- testimonial section start -------*/
+.testimonial
+{
+	margin: 4rem 0;
+}
+
+.testimonial .container
+{
+	padding: 3.6rem 1.8rem;
+	text-align: center;
+}
+
+.testimonial-row
+{
+	margin: 2rem 0;
+}
+
+.testimonial-card
+{
+	text-align: left;
+	margin: 1.4rem 0;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 0.5rem 2rem 1rem 1rem;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.avatar-card
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.student-img
+{
+	max-width: 50px;
+	border: none;
+	border-radius: 50px;
+	margin-right: 0.6rem;
+}
+
+.student-name
+{
+	color: var(--blue-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+/*-------------- testimonial section end -------*/
+
+
+/*-------------- Footer section start -----------*/
+footer
+{
+	background-color: var(--blue-color);
+}
+
+footer .container
+{
+	height: 80vh;
+	padding: 0 1.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	text-align: center;
+}
+/*-------------- Footer section end -----------*/
+
+
+/*------------------------------------------------------*/
+/*--------------- Desktop screen media query --------------*/
+/*------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	:root
+	{
+		/*---------- Font size ------------*/
+		---heading--font-size: 3rem;
+		---paragraph--font-size: 1rem;
+	}
+
+	.container
+	{
+		max-width: 1180px;
+		margin: 0 auto;
+		padding: 6rem 5rem;
+	}
+
+	.container .heading
+	{
+		line-height: 1;
+	}
+
+	.container .para-line
+	{
+		margin: 1.2rem 0;
+	}
+
+	.row
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+	}
+
+	.col
+	{
+		width: 100%;
+	}
+
+	/*--------------- Hero section ------------*/
+	.hero-content
+	{
+		max-width: 720px;
+	}
+
+	/*--------------- About section -----------*/
+	.about
+	{
+		margin: 5rem;
+	}
+
+	.about .container
+	{
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.about-img
+	{
+		border-radius: 2rem;
+	}
+
+
+	/*--------------- Category section -------------*/
+	.category .container
+	{
+		padding: 5rem 2rem;
+		text-align: center;
+		background-image: url(img/category-bg-dark.png);
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.category .container .para-line
+	{
+		max-width: 700px;
+		margin: 1.2rem auto;
+	}
+
+	.category-row
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 2rem;
+		padding: 1rem 0;	
+	}
+
+	.category-card
+	{
+		margin: 0;
+	}
+
+	.category-icon
+	{
+		font-size: 2rem;
+	}
+
+	.category-course
+	{
+		margin: 0 !important;
+	}
+
+
+	/*------------- Facilities --------------*/
+	.facilities .container
+	{
+		text-align: left;
+	}
+
+	.facility-box
+	{
+		display: flex;
+		justify-content: flex-start;
+		gap: 1.1rem;
+	}
+
+	.facility-icon
+	{
+		font-size: 4rem;
+	}
+
+	.facility-desc
+	{
+		margin: 0 !important;
+	}
+
+
+	/*----------- Success start -------------*/
+	.success .container
+	{
+		margin: 0 auto;
+	}
+
+	.success .container .para-line
+	{
+		max-width: 700px;
+		margin: 1.2rem auto;
+	}
+
+	.success-row
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1.6rem;
+	}
+
+	.success-card .success-title
+	{
+		margin: 0 !important;
+	}
+
+
+	/*----------- Master start ------------*/
+	.master .container .para-line
+	{
+		max-width: 700px;
+		margin: 1.2rem auto;
+	}
+
+	.masters-row
+	{
+		margin: 1rem 0;
+		display: flex;
+	}
+
+
+	/*------------ Partner section -----------*/
+	.partner
+	{
+		background: url(img/category-bg-dark.png);
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.partner .container .para-line
+	{
+		max-width: 700px;
+		margin: 1.2rem auto;
+	}
+
+	.partner-row
+	{
+		margin: 0.5rem;
+		display: flex;
+		gap: 1rem;
+	}
+
+
+	/*----------- Testimonial section ----------*/
+	.testimonial .container
+	{
+		padding: 2rem 1rem;
+	}
+
+	.testimonial .container .para-line
+	{
+		max-width: 700px;
+		margin: 1.2rem auto;
+	}
+
+	.testimonial-row
+	{
+		margin: 0.5rem;
+		display: flex;
+		gap: 1rem;
+	}
+
+	.testimonial-card
+	{
+		border-radius: 22px;
+	}
+
+
+	/*---------- Footer ------------*/
+	footer .container
+	{
+		height: 60vh;
+	}
+
+	.cta-heading
+	{
+		font-size: 2.2rem;
+	}
+
+	footer .container .para-line
+	{
+		max-width: 700px;
+		margin: 0.5rem auto;
+	}
+}

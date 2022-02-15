@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Course Checkout</title>
+
+	<!-- External CSS file -->
+	<link rel="stylesheet" href="checkout.css">
+
+	<!-- Ionicons icon CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<!-------------- Checkout header start --------------->
+	<div class="checkout-header">
+		<div class="container">
+			<h2 class="main-heading white">Achieve the Success with us!</h2>
+			<p class="para-line white">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+			</p>
+		</div>
+	</div>
+	<!-------------- Checkout header end --------------->
+
+
+	<!------------- Checkout feature starts --------------->
+	<div class="checkout-features">
+		<div class="container">
+			<div class="features">
+				<div class="feature-card">
+					<ion-icon name="shield-checkmark-outline" class="feature-icon"></ion-icon>
+					<h5 class="feature-heading">Your Information is Secure</h5>
+				</div>
+
+				<div class="feature-card">
+					<ion-icon name="happy-outline" class="feature-icon"></ion-icon>
+					<h5 class="feature-heading">100% Satisfaction Guaranteed</h5>
+				</div>
+
+				<div class="feature-card">
+					<ion-icon name="lock-closed-outline" class="feature-icon"></ion-icon>
+					<h5 class="feature-heading">We Protect Your Privacy</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------------- Checkout feature end --------------->
+
+
+	<!------------- Billing detail start --------------->
+	<div class="billing">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="col-heading">Billing details</h2>
+					<form action="" class="billing-form">
+						<div class="input-row input-row-oneline">
+							<div class="input-col">
+								<label for="first-name">First Name</label>
+								<input type="text" id="first-name" class="input-field" required>
+							</div>
+							<div class="input-col">
+								<label for="last-name">Last name</label>
+								<input type="text" id="last-name" class="input-field" required>
+							</div>
+						</div>
+
+						<div class="input-row">
+							<label for="country">Country / Region</label>
+							<input type="text" id="country" class="input-field" required>
+						</div>
+
+						<div class="input-row">
+							<div class="input-col">
+								<label for="street-add">Street Address</label>
+								<input type="text" id="street-add" class="input-field" placeholder="House number and street name" required>
+							</div>
+							<div class="input-col">
+								<input type="text" id="street-line2" class="input-field" placeholder="Apartment, suit, etc.">
+							</div>
+						</div>
+
+						<div class="input-row input-row-oneline">
+							<div class="input-col">
+								<label for="town">Town / City</label>
+								<input type="text" id="town" class="input-field" required>
+							</div>
+							<div class="input-col">
+								<label for="country">Country(optional)</label>
+								<input type="text" id="country" class="input-field">
+							</div>
+							<div class="input-col">
+								<label for="postcode">Postcode</label>
+								<input type="text" id="postcode" class="input-field" required>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col">
+								<label for="phone">Phone</label>
+								<input type="text" id="phone" class="input-field" required>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col">
+								<label for="email">Email address</label>
+								<input type="email" id="email" class="input-field">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col col-table">
+					<h2 class="col-heading">Your order</h2>
+					<table class="total-table">
+						<tr>
+							<th>Product</th>
+							<th>Subtotal</th>
+						</tr>
+						<tr>
+							<td>
+								Front End Development Course × 1
+							</td>
+							<td>$200.00</td>
+						</tr>
+						<tr>
+							<td>Subtotal</td>
+							<td>$200.00</td>
+						</tr>
+						<tr>
+							<td>Shipping</td>
+							<td>Flate rate: $10.00</td>
+						</tr>
+						<tr>
+							<th>Total</th>
+							<th>$210.00</th>
+						</tr>
+					</table>
+
+					<hr>
+
+					<div class="coupon-row input-row-oneline">
+						<div class="coupon-col">
+							<input type="text" id="coupon" class="input-field" placeholder="Coupon code">
+						</div>
+						<div class="coupon-col">
+							<button class="btn border-btn">
+								<a href="#">
+									Apply
+								</a>
+							</button>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="payment">
+						<input type="radio" id="html" name="fav_language" value="HTML">
+						<label for="html">Cash on delivery</label><br>
+						<input type="radio" id="css" name="fav_language" value="CSS" active>
+						<label for="css">PayPal</label>
+						<p class="paypal-info">
+							Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+						</p>
+					</div>
+
+					<p class="privacy-text">
+						Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+					</p>
+
+					<button class="btn border-btn">
+						<a href="thankyou.html">
+							Place Order
+						</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------------- Billing detail end --------------->
+
+	<!------------- Guarantee start -------------->
+	<div class="guarantee">
+		<div class="container">
+			<div class="guarantee-row">
+				<div class="guarantee-col badge-col">
+					<img src="img/guarantee-badge.png" class="badge" alt="">
+				</div>
+				<div class="guarantee-col guarantee-content-col">
+					<h2 class="guarantee-heading">No-Risk Money Back Guarantee</h2>
+					<p class="para-line">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------------- Guarantee end -------------->
+
+
+	<!----------- Testimonial section start ----------->
+	<section class="testimonial">
+		<div class="container">
+			<h2 class="heading">Let's Hear from Student's</h2>
+			<p class="para-line">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+			</p>
+
+			<div class="testimonial-row">
+				<div class="testimonial-card">
+					<p class="para-line review-line">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+					</p>
+					<div class="avatar-card">
+						<img src="img/client-1.jpg" alt="" class="student-img">
+						<h3 class="student-name">John Doe</h3>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<p class="para-line review-line">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+					</p>
+					<div class="avatar-card">
+						<img src="img/client-2.jpg" alt="" class="student-img">
+						<h3 class="student-name">Teresa Mathew</h3>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<p class="para-line review-line">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+					</p>
+					<div class="avatar-card">
+						<img src="img/client-3.jpg" alt="" class="student-img">
+						<h3 class="student-name">Liyendra Tom</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----------- Testimonial section end ----------->
+</body>
+</html>

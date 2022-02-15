@@ -1,0 +1,349 @@
+/*------------ Google font -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+:root
+{
+	/*--------- Color variable ---------*/
+	--blue-color: #33467b;
+	---light--blue-color: #69788F;
+
+	/*---------- Font size ------------*/
+	---heading--font-size: 1.5rem;
+	---paragraph--font-size: 1rem;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+.para-line
+{
+	font-size: 1rem;
+}
+
+.white
+{
+	color: #ffffff;
+}
+
+.btn
+{
+	background-color: #ffffff;
+	padding: 11px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	color: var(--blue-color);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.border-btn
+{
+	border: 2px solid var(--blue-color);
+	margin: 1.5rem 0;
+	transition: .5s;
+}
+
+.border-btn:hover
+{
+	background: var(--blue-color);
+}
+
+.border-btn:hover a
+{
+	color: #ffffff;
+}
+
+
+/*--------------------- header start ----------------*/
+header
+{
+	background: var(--blue-color);
+}
+
+header .container
+{
+	height: 80vh;
+	padding: 0 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-icon
+{
+	color: #ffffff;
+	font-size: 3rem;
+}
+
+.main-heading
+{
+	color: #ffffff;
+	padding: 1rem 0;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+header .container p
+{
+	text-align: center;
+}
+/*--------------------- header end ----------------*/
+
+
+/*------------------- Thank you content start --------------*/
+.thankyou-content
+{
+	margin: 5rem 0;
+}
+
+.thankyou-content .container
+{
+	padding: 0 1.6rem;
+}
+
+.thankyou-content .container .heading
+{
+	color: var(--blue-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.thankyou-content .container .order-summary
+{
+	margin: 2rem 0;
+	background: #fafaff;
+}
+
+.order-summary ul
+{
+	padding: 1.2rem;
+}
+
+.order-summary ul li
+{
+	list-style: none;
+	padding: 0.5rem 0;
+	border-bottom: 1px dashed var(---light--blue-color);
+}
+
+.order-summary ul li p
+{
+	color: var(--light-blue-color);
+}
+
+.order-summary ul li p
+{
+	color: var(--blue-color);
+}
+
+.order-detail
+{
+	margin: 2rem 0;
+	background: #fafaff;
+	padding: 1.2rem;
+}
+
+.order-detail-table
+{
+	text-align: left;
+	padding: 1rem 0;
+}
+
+.order-detail-table th
+{
+	color: var(--blue-color);
+	font-weight: 600;
+}
+
+.order-detail-table td
+{
+	padding: 0.5rem 0;
+	font-size: 0.8rem;
+	line-height: 1.1;
+	border-bottom: 1px dashed var(---light--blue-color);
+}
+/*------------------- Thank you content end --------------*/
+
+
+/*------------------- CTA start ---------------------*/
+.cta
+{
+	padding: 4rem 1.5rem;
+	background: #ffffff;
+}
+
+.cta .container
+{
+	padding: 2rem;
+	background: #fafaff;
+	border: none;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.row
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta-content .cta-heading
+{
+	color: var(--blue-color);
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.cta-content .para-line
+{
+	color: var(---light--blue-color);
+	text-align: center;
+	padding: 1rem 0;
+}
+/*------------------- CTA end ---------------------*/
+
+
+
+
+
+/*------------------------------------------------------*/
+/*--------------- Desktop screen media query --------------*/
+/*------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	/*-------------- header --------------*/
+	header .container
+	{
+		height: 56vh;
+	}
+
+	.header-icon
+	{
+		font-size: 4rem;
+	}
+
+	.main-heading
+	{
+		color: #ffffff;
+		padding: 1rem 0;
+		font-size: 2.6rem;
+		font-weight: 600;
+	}
+
+	header .container p
+	{
+		max-width: 700px;
+	}
+
+
+
+	/*-------------- thank you content ---------------*/
+	.thankyou-content
+	{
+		margin: 0 auto;
+	}
+
+	.thankyou-content .container
+	{
+		margin: 5rem auto;
+		padding: 0 1.6rem;
+		max-width: 800px;
+	}
+
+	.thankyou-content .container .heading
+	{
+		color: var(--blue-color);
+		font-size: 1.2rem;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.thankyou-content .container .order-summary
+	{
+		padding: 0.6rem;
+		background: #fafaff;
+	}
+
+	.order-summary ul
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.order-summary ul li
+	{
+		border: none;
+	}
+
+	.order-detail-table
+	{
+		width: 100%;
+	}
+
+
+	/*----------- CTA section -------------*/
+	.cta
+	{
+		padding: 6rem;
+		background: #ffffff;
+	}
+
+	.cta .container
+	{
+		border-radius: 12px;
+	}
+
+	.row
+	{
+		flex-direction: row;
+		align-items: center;
+		gap: 3rem;
+	}
+
+	.row .cta-content
+	{
+		width: 80%;
+	}
+
+	.row .cta-content .cta-heading
+	{
+		text-align: left;
+	}
+
+	.row .cta-content .para-line
+	{
+		text-align: left;
+	}
+}

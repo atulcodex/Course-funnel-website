@@ -1,0 +1,648 @@
+/*------------ Google font -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+:root
+{
+	/*--------- Color variable ---------*/
+	--blue-color: #33467b;
+	---light--blue-color: #69788F;
+
+	/*---------- Font size ------------*/
+	---heading--font-size: 1.5rem;
+	---paragraph--font-size: 1rem;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+img
+{
+	width: 100%;
+	height: 0 auto;
+}
+
+.para-line
+{
+	font-size: 1rem;
+}
+
+.btn
+{
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 11px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn a
+{
+	color: var(--blue-color);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+	font-weight: 500;
+	line-height: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.border-btn
+{
+	border: 2px solid var(--blue-color);
+	margin: 1.5rem 0;
+	transition: .5s;
+}
+
+.border-btn:hover
+{
+	background: var(--blue-color);
+}
+
+.border-btn:hover a
+{
+	color: #ffffff;
+}
+
+
+/*---------------- Header section start --------------*/
+.checkout-header
+{
+	color: #ffffff;
+	background: var(--blue-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkout-header .container
+{
+	max-width: 1200px;
+	padding: 5rem 1.6rem;
+	text-align: center;
+}
+
+.main-heading
+{
+	font-size: 1.8rem;
+}
+/*---------------- Header section end --------------*/
+
+
+/*---------------- Checkout features start -------------*/
+.checkout-features
+{
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.checkout-features .container
+{
+	padding: 2.6rem 1rem;
+}
+
+.feature-card
+{
+	color: var(---light--blue-color);
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.feature-icon
+{
+	font-size: 2rem;
+}
+/*---------------- Checkout features end -------------*/
+
+
+/*---------------- Billing section start --------------*/
+.billing
+{
+	background: #f9f9fa;
+}
+
+.billing .container
+{
+	padding: 4rem 2.5rem;
+}
+
+.col-heading
+{
+	color: var(--blue-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.input-row
+{
+	margin-top: 1.2rem;
+}
+
+.input-col
+{
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+label
+{
+	font-size: 0.9rem;
+	padding-bottom: 0.4rem;
+}
+
+.input-field
+{
+	width: 100%;
+	padding: 10px 12px;
+	font-size: 1rem;
+	color: #555;
+	background: #ffffff;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	height: auto;
+}
+
+.col-table
+{
+	margin: 4rem 0;
+}
+
+.total-table
+{
+	text-align: left;
+}
+
+.total-table th
+{
+	font-weight: 600;
+	border-bottom: 1px dashed var(---light--blue-color);
+	border-top: 1px dashed var(---light--blue-color);
+}
+
+.total-table td
+{
+	font-size: 0.7rem;
+}
+
+.paypal-info
+{
+	font-size: 0.9rem;
+	background: #dfe4ea;
+	padding: 0.7rem;
+}
+
+.privacy-text
+{
+	padding-top: 1.8rem;
+	font-size: 0.7rem;
+	color: var(--blue-color);
+}
+/*---------------- Billing section end --------------*/
+
+
+/*---------------- Guarantee section start ------------*/
+.guarantee
+{
+	padding: 1.8rem;
+	background: #f9f9fa;
+	border: none;
+
+}
+
+.guarantee .container
+{
+	background: #ffffff !important;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+	border-radius: 8px;
+	padding: 2rem;
+	text-align: center;
+}
+
+.badge
+{
+	max-width: 80%;
+}
+
+.guarantee-heading
+{
+	color: var(--blue-color);
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 1.1;
+	padding: 1rem 0;
+}
+
+.guarantee-col .para-line
+{
+	color: var(---light--blue-color);
+	font-size: 0.9rem;
+}
+/*---------------- Guarantee section end ------------*/
+
+
+/*---------------- Testimonial section start ------------*/
+.testimonial
+{
+	background: #f9f9fa;	
+}
+
+.testimonial .container
+{
+	padding: 3.6rem 1.8rem;
+	text-align: center;
+}
+
+.testimonial .container .heading
+{
+	color: var(--blue-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.testimonial .container .para-line
+{
+	color: var(---light--blue-color);
+	font-size: 0.9rem;
+}
+
+.testimonial-row
+{
+	margin: 2rem 0;
+}
+
+.testimonial-card
+{
+	text-align: left;
+	margin: 1.4rem 0;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 1rem 2rem 1rem 1rem;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.avatar-card
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.student-img
+{
+	max-width: 50px;
+	border: none;
+	border-radius: 50px;
+	margin-right: 0.6rem;
+}
+
+.student-name
+{
+	color: var(--blue-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+/*-------------- testimonial section end -------*/
+
+
+
+/*-------------------------------------------------------------*/
+/*------------------------ Desktop screen size ----------------*/
+/*-------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	:root
+	{
+		/*--------- Color variable ---------*/
+		--blue-color: #33467b;
+		---light--blue-color: #69788F;
+
+		/*---------- Font size ------------*/
+		---heading--font-size: 1.5rem;
+		---paragraph--font-size: 1rem;
+	}
+
+	.container
+	{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.para-line
+	{
+		margin: 0 8rem;
+	}
+
+	/*---------------- Header section start --------------*/
+	.checkout-header
+	{
+		color: #ffffff;
+		background: var(--blue-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.checkout-header .container
+	{
+		max-width: 1200px;
+		padding: 8rem 1.6rem;
+		text-align: center;
+	}
+
+	.main-heading
+	{
+		font-size: 3.4rem;
+		font-weight: 600;
+	}
+	/*---------------- Header section end --------------*/
+
+	/*---------------- Checkout features start -------------*/
+	.features
+	{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.checkout-features .container
+	{
+		padding: 2.6rem 1rem;
+	}
+
+	.feature-card
+	{
+		color: var(---light--blue-color);
+		padding: 1rem 0;
+		text-align: center;
+	}
+
+	.feature-icon
+	{
+		font-size: 2.8rem;
+	}
+
+	.feature-heading
+	{
+		color: var(---light--blue-color);
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	/*---------------- Checkout features end -------------*/
+
+	/*---------------- Billing section start --------------*/
+	.billing .container .row
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 5rem;
+	}
+
+	.billing .container .col
+	{
+		width: 100%;
+	}
+
+	.col-heading
+	{
+		font-size: 1.1rem;
+	}
+
+	.input-row
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	.input-row-oneline
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
+	}
+
+	.input-col
+	{
+		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	label
+	{
+		font-size: 0.9rem;
+		padding-bottom: 0.4rem;
+	}
+
+	.input-field
+	{
+		width: 100%;
+		padding: 10px 12px;
+		font-size: 1rem;
+		color: #555;
+		background: #ffffff;
+		border: 1px solid #d4d4d4;
+		border-radius: 3px;
+		height: auto;
+	}
+
+	.col-table
+	{
+		margin: 4rem 0;
+	}
+
+	.total-table
+	{
+		text-align: left;
+	}
+
+	.total-table th
+	{
+		font-weight: 600;
+		border-bottom: 1px dashed var(---light--blue-color);
+		border-top: 1px dashed var(---light--blue-color);
+	}
+
+	.total-table td
+	{
+		font-size: 0.7rem;
+	}
+
+	.paypal-info
+	{
+		font-size: 0.9rem;
+		background: #dfe4ea;
+		padding: 0.7rem;
+	}
+
+	.privacy-text
+	{
+		padding-top: 1.8rem;
+		font-size: 0.7rem;
+		color: var(--blue-color);
+	}
+
+	.col-table
+	{
+		margin: 0;
+	}
+
+	.total-table
+	{
+		width: 100%;
+		margin: 2rem 0;
+	}
+
+	.total-table th
+	{
+		color: var(--blue-color);
+		font-weight: 500;
+	}
+
+	.total-table td
+	{
+		font-size: 0.8rem;
+		padding: 0.2rem 0;
+	}
+
+	.coupon-row .coupon-col
+	{
+		width: 100%;
+	}
+
+	.coupon-row .coupon-col input
+	{
+		width: 100%;
+		padding: 12px 12px;
+		font-size: 1rem;
+		color: #555;
+		background: #ffffff;
+		border: 1px solid #d4d4d4;
+		border-radius: 3px;
+		height: auto;
+	}
+
+	.payment
+	{
+		margin-top: 1rem;
+		padding: 1.2rem;
+		background-color: #efeeff;
+	}
+
+	.payment .paypal-info
+	{
+		margin-top: 0.5rem;
+	}
+
+	.privacy-text
+	{
+		font-size: 0.8rem;
+	}
+	/*---------------- Billing section end --------------*/
+
+
+	/*---------------- Guarantee section start ------------*/
+	.guarantee .container
+	{
+		background: #ffffff !important;
+		box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+		border-radius: 8px;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.guarantee-row
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.guarantee-row .badge-col
+	{
+		width: 16%;
+	}
+
+	.guarantee-row .guarantee-content-col
+	{
+		width: 84%;
+		text-align: left;
+	}
+
+	.badge
+	{
+		max-width: 80%;
+	}
+
+	.guarantee-heading
+	{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+	.guarantee-col .para-line
+	{
+		font-size: 1.2rem;
+		text-align: left;
+		margin: 0;
+	}
+	/*---------------- Guarantee section end ------------*/
+
+	/*----------- Testimonial section ----------*/
+	.testimonial .container
+	{
+		padding: 5rem 1rem;
+	}
+
+	.testimonial .container .heading
+	{
+		font-size: 2.5rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	.testimonial .container .para-line
+	{
+		max-width: 700px;
+		margin: 0.5rem auto;
+		padding: 0;
+	}
+
+	.testimonial-row
+	{
+		margin: 1rem 0;
+		display: flex;
+		gap: 1rem;
+	}
+
+	.testimonial-card
+	{
+		border-radius: 22px;
+		padding: 1re 1rem 1rem 1rem;
+	}
+}
